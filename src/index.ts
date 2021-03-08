@@ -1,6 +1,13 @@
-import express from 'express'
+import app from './app'
+import dotenv from 'dotenv'
+import connectDB from './infrastructure/adapters/mongodb'
 
-const app = express()
+// Environment config
+dotenv.config()
+
+// Db Connection
+connectDB()
 
 
-app.listen(3000, () => console.log('server on port 3000'))
+app.listen(process.env.NODE_PORT, () => 
+  console.log(`Server running on port ${process.env.NODE_PORT}`))
