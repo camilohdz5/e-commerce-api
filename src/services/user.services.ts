@@ -1,2 +1,1 @@
-import userModel from '../domain/models/user.model'
-
+import userModel from '../domain/models/user.model';

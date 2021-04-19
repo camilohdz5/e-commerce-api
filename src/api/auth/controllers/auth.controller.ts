@@ -1,34 +1,21 @@
-import { RequestHandler } from 'express'
+import { RequestHandler } from 'express';
 
-
-export const signIn: RequestHandler = (req, res)  => {
+export const signIn: RequestHandler = (req, res) => {
   try {
+  } catch (err) {}
+};
 
-  } catch (err) {
-
-  }
-}
-
-export const signUp: RequestHandler = (req, res)  => {
+export const signUp: RequestHandler = (req, res) => {
   try {
-
-  } catch (err) {
-    
-  }
-}
+  } catch (err) {}
+};
 
 export const updateProfile: RequestHandler = (req, res) => {
   try {
-
-  } catch (err) {
-    
-  }
-}
- /* the controllers below is for Admin Actions */
+  } catch (err) {}
+};
+/* the controllers below is for Admin Actions */
 export const inactivateProfile: RequestHandler = (req, res) => {
   try {
-
-  } catch (err) {
-    
-  }
-}
+  } catch (err) {}
+};
